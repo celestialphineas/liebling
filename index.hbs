@@ -31,12 +31,7 @@ into the {body} of the default.hbs template --}}
     {{#if @site.description}}
       <p class="m-hero-description bigger">{{@site.description}}</p>
     {{/if}}
-    {{#if @labs.subscribers}}
-      <a href="{{@site.url}}/subscribe" class="m-button filled">{{t "Subscribe"}}</a>
-    {{/if}}
-    {{#if @labs.members}}
-      <a href="{{@site.url}}/newsletter" class="m-button filled">{{t "Subscribe"}}</a>
-    {{/if}}
+    <a href="{{@site.url}}/about" class="m-button filled">{{t "About us"}}</a>
   </div>
   </section>
   <div class="l-content">
@@ -106,14 +101,12 @@ into the {body} of the default.hbs template --}}
                 </button>
               </div>
             </div>
+                      {{else}}
+          <span>Sorry, no featured posts.</span>
           {{/if}}
         {{/get}}
-        {{!-- The tag below iterates over all the posts --}}
-        {{> "loop"}}
       </div>
     </div>
-    {{!-- Links to Previous/Next posts --}}
-    {{pagination}}
   </div>
 </main>
 

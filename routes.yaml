@@ -1,22 +1,49 @@
 routes:
-  /signup/:
-    template: members/signup
-    data: page.signup
-  /signin/:
-    template: members/signin
-    data: page.signin
-  /membership/:
-    template: members/membership
-    data: page.membership
-  /account/:
-    template: members/account
-    data: page.account
+  /:
+    template: index
+  /research/work/:
+    template: research
+    controller: channel
+    filter: tag:research-work
+    data: tag.research-work
+  /research/essay/:
+    template: research-list
+    controller: channel
+    filter: tag:research-essay
+    data: tag.research-essay
+  /research/dataset/:
+    template: research-list
+    controller: channel
+    filter: tag:research-dataset
+    data: tag.research-dataset
+  /research/result/:
+    template: research-list
+    controller: channel
+    filter: tag:research-result
+    data: tag.research-result 
+  /research/resource/:
+    template: research-list
+    controller: channel
+    filter: tag:research-resource
+    data: tag.research-resource
+
 
 collections:
-  /:
-    permalink: /{slug}/
-    template: index
-
+  /research/:
+    permalink: /research/{slug}/
+    template: research
+    filter: tag:research
+    data: tag.research
+  /course/:
+    permalink: /course/{slug}/
+    template: course
+    filter: tag:course
+    data: tag.course
+  /archive/:
+    permalink: /archive/{slug}/
+    template: archive
+    filter: tag:article
+    data: tag.article
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/

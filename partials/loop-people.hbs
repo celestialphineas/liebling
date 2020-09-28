@@ -4,8 +4,8 @@
   {{#is "post"}}
     <div class="m-recommended-slider__item glide__slide">
   {{/is}}
-  <article class="m-article-card {{#unless feature_image}}no-picture{{/unless}} {{post_class}}">
-    <div class="m-article-card__picture">
+  <article class="m-article-card {{post_class}}" style="width: calc(20% - 40px) !important; height: 220px;">
+    <div class="m-article-card__picture " style="height: calc(50%) !important;">
       <a href="{{url}}" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
       {{#if feature_image}}
         <img class="m-article-card__picture-background" src="{{img_url feature_image size="m"}}" loading="lazy" alt="">
@@ -22,22 +22,15 @@
         </a>
       {{/if}}
     </div>
-    {{#if primary_tag}}
-      <div class="m-article-card__info">
-        <a href="{{primary_tag.url}}" class="m-article-card__tag">{{primary_tag.name}}</a>
-    {{else}}
       <div class="m-article-card__info no-tag">
-    {{/if}}
-      <a href="{{url}}" class="m-article-card__info-link" aria-label="{{title}}">
+      <a href="{{url}}" class="m-article-card__info-link" aria-label="{{title}}" style="justify-content: space-around !important;">
         <div>
           <h2 class="m-article-card__title js-article-card-title {{#unless feature_image}}js-article-card-title-no-image{{/unless}}" title="{{title}}">
             {{title}}
           </h2>
         </div>
-        <div class="m-article-card__timestamp">
-          <span>{{date published_at timeago="true"}}</span>
-          <span>&bull;</span>
-          <span>{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
+        <div>
+            {{excerpt}}
         </div>
       </a>
     </div>
@@ -47,9 +40,9 @@
   {{/is}}
   {{else}}
     <header class="m-heading no-margin">
-      <h3>{{t "No posts found"}}</h3>
+      <h3>{{t "No people found"}}</h3>
       <p>
-        {{t "Apparently there are no posts at the moment, check again later."}}
+        {{t "Sorry, check again later."}}
       </p>
     </header>
 {{/foreach}}

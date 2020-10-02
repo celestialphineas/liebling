@@ -28,14 +28,14 @@ into the {body} of the default.hbs template --}}
   {{> hero background=@site.cover_image}}
   <div class="m-hero__content" data-aos="fade-down">
     <h1 class="m-hero-title bigger">Archive</h1>
-      <p class="m-hero-description bigger">This is the archive page.</p>
+      <p class="m-hero-description bigger">This is the archive page</p>
   </div>
   </section>
 
   <div class="l-content">
     <div class="l-wrapper" data-aos="fade-up" data-aos-delay="300">
       <div class="l-grid centered">
-        <div class="m-header m-menu js-menu">
+          <div class="m-header m-menu js-menu">
             <div class="m-menu__main" data-aos="fade-down">
               <div class="l-grid centered">
                 <div class="m-nav">
@@ -63,9 +63,8 @@ into the {body} of the default.hbs template --}}
           </div>
         </div>
         {{!-- The tag below iterates over all the posts --}}
-        {{> "loop-index"}}
+        {{> "loop-list"}}
       </div>
-          {{!-- Links to Previous/Next posts --}}
     </div>
   </div>
 
@@ -74,8 +73,4 @@ into the {body} of the default.hbs template --}}
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
   <script defer src="{{asset "js/home.js"}}"></script>
-  <script>
-    
-    
-  <script>
 {{/contentFor}}

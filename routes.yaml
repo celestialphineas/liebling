@@ -26,8 +26,22 @@ routes:
     controller: channel
     filter: tag:research-resource
     data: tag.research-resource
-
-
+  /archive/musicgroup/:
+    template: archive
+    controller: channel
+    filter: tag:article+tag:music-group
+  /archive/fontgroup/:
+    template: archive
+    controller: channel
+    filter: tag:article+tag:font-group
+  /archive/chinese/:
+    template: archive
+    controller: channel
+    filter: tag:article+tag:chinese
+  /archive/english/:
+    template: archive
+    controller: channel
+    filter: tag:article+tag:english
 collections:
   /research/:
     permalink: /research/{slug}/

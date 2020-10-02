@@ -41,20 +41,17 @@ into the {body} of the default.hbs template --}}
                 <div class="m-nav">
                   <nav class="m-nav__left" aria-label="{{t "Secondary menu"}}">
                     <ul>
+                      <li class="all">
+                        <a href="/research">{{t "全部 All"}}</a>
+                      </li>
                       <li class="work">
-                        <a href="/research/work">{{t "Work"}}</a>
+                        <a href="/research/work">{{t "作品 Works "}}</a>
                       </li>
                       <li class="essay">
-                        <a href="/research/essay">{{t "Essay"}}</a>
+                        <a href="/research/result">{{t "成果 Results "}}</a>
                       </li>
                       <li class="dataset">
-                        <a href="/research/dataset">{{t "Dataset"}}</a>
-                      </li>
-                      <li class="result">
-                        <a href="/research/result">{{t "Result"}}</a>
-                      </li>
-                      <li class="resource">
-                        <a href="/research/resource">{{t "Resource"}}</a>
+                        <a href="/research/dataset">{{t "数据集 Dataset "}}</a>
                       </li>
                     </ul>
                   </nav>
@@ -63,10 +60,8 @@ into the {body} of the default.hbs template --}}
           </div>
         </div>
         {{!-- The tag below iterates over all the posts --}}
-        {{> "loop"}}
+        {{> "loop-index"}}
       </div>
-          {{!-- Links to Previous/Next posts --}}
-    {{pagination}}
     </div>
   </div>
 

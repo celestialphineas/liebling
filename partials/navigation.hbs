@@ -1,20 +1,8 @@
-{{!--
-This navigation template is shared across all the pages.
-Also it includes the big submenu.
---}}
-
-{{#if isSecondary}}
-  <ul class="m-secondary-menu">
-    {{#foreach navigation}}
-      <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}">
-        <a href="{{url}}">{{label}}</a>
-      </li>
-    {{/foreach}}
-  </ul>
-{{else}}
-  {{#foreach navigation}}
-    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}">
-      <a href="{{url}}">{{label}}</a>
-    </li>
-  {{/foreach}}
-{{/if}}
+<li class="nav-home nav-current">
+    <a href="/">首页<small>Home</small></a>
+    <a href="/about">关于<small>About</small></a>
+    <a href="/archive">文章<small>Archive</small></a>
+    <a href="/research">研究<small>Researches</small></a>
+    <a href="/course">课程<small>Courses</small></a>
+    <a href="/people">人员<small>People</small></a>
+</li>

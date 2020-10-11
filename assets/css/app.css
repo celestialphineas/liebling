@@ -302,7 +302,7 @@ textarea {
     --link-color: #293951;
     --primary-border-color: #9b9b9b;
     --secondary-border-color: #f0f8ff;
-    --article-shadow-normal: 0 10px 10px rgba(0, 0, 0, 0.08);
+    /* --article-shadow-normal: 0 10px 10px rgba(0, 0, 0, 0.08); */
     --article-shadow-hover: 0 4px 60px 0 rgba(0, 0, 0, 0.2);
     --transparent-background-color: hsla(0, 0%, 100%, 0.99);
     --footer-background-color: #133467;
@@ -2508,12 +2508,12 @@ _:-ms-fullscreen {
 }
 
 .m-article-card__info.no-tag .m-article-card__info-link {
-    padding-top: 48px
+    padding-top: 30px
 }
 
 @media only screen and (min-width:48rem) {
     .m-article-card__info.no-tag .m-article-card__info-link {
-        padding-top: 53px
+        padding-top: 30px
     }
 }
 

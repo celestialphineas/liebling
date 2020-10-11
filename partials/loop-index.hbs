@@ -17,11 +17,16 @@
         {{/if}}
       </a>
     </div>
+    
     {{#if tags }}
     <div class="m-article-card__info">
+      <div class="m-article-card__tag">
+           {{tags separator=", "}}
+        </div>
     {{else}}
-      <div class="m-article-card__info no-tag">
+    <div>
     {{/if}}
+    
       <a href="{{url}}" class="m-article-card__info-link" aria-label="{{title}}">
         <div>
           <h2 class="m-article-card__title js-article-card-title {{#unless feature_image}}js-article-card-title-no-image{{/unless}}" title="{{title}}">

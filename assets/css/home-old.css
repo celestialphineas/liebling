@@ -24,7 +24,7 @@
 
 @media only screen and (min-width:64rem) {
     .m-featured-slider {
-        width: calc(100%);
+        width: calc(66.66667% - 40px);
         margin: 0 20px 40px;
         overflow: unset
     }
@@ -59,21 +59,12 @@
     }
 }
 
-.nextlab-featured-picture {
-    width: calc(65%);
-}
-
-.nextlab-featured-content {
-    width: calc(35%);
-}
-
 .m-featured-article {
     position: relative;
     height: 100%;
     overflow: hidden;
     background-color: var(--primary-subtle-color);
     z-index: 1;
-    display: flex;
 }
 
 .m-featured-article:hover .m-featured-article__author {
@@ -85,6 +76,9 @@
 }
 
 .m-featured-article__picture {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: #000;
@@ -150,8 +144,7 @@
     color: #fff;
     letter-spacing: .3px;
     font-weight: 700;
-    font-size: 1rem;
-    padding: 30px 0 0 20px;
+    font-size: 1rem
 }
 
 .m-featured-article__ribbon {
@@ -160,7 +153,7 @@
     justify-content: center;
     position: absolute;
     top: 26px;
-    left: 70px;
+    right: 20px;
     width: 24px;
     height: 24px;
     color: #000;
@@ -172,8 +165,8 @@
 @media only screen and (min-width:48rem) {
     .m-featured-article__ribbon {
         justify-content: flex-start;
-        top: 45px;
-        left: 100px;
+        top: 47px;
+        right: 40px;
         width: auto;
         height: 22px;
         padding: 0 7px;
@@ -229,14 +222,14 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding: 50px 0px 70px;
+    padding: 120px 20px 20px;
     position: relative;
     z-index: 3
 }
 
 @media only screen and (min-width:48rem) {
     .m-featured-article__content {
-        padding: 50px 20px 80px
+        padding: 125px 40px 40px
     }
 }
 

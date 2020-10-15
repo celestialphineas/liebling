@@ -27,8 +27,8 @@ into the {body} of the default.hbs template --}}
   {{!-- Inject styles of the hero image to make it responsive --}}
   {{> hero background=@site.cover_image}}
   <div class="m-hero__content" data-aos="fade-down">
-    <h1 class="m-hero-title bigger">Research</h1>
-      <p class="m-hero-description bigger">This is the research page.</p>
+    <h1 class="m-common-hero-title bigger">Research</h1>
+      <p class="m-common-hero-description bigger">This is the research page.</p>
   </div>
   </section>
 
@@ -41,17 +41,14 @@ into the {body} of the default.hbs template --}}
                 <div class="m-nav">
                   <nav class="m-nav__left" aria-label="{{t "Secondary menu"}}">
                     <ul>
-                      <li class="all">
-                        <a href="/research">{{t "全部 All"}}</a>
-                      </li>
                       <li class="work">
-                        <a href="/research/work">{{t "作品 Works "}}</a>
+                        <a href="/new/research/work">{{t "作品 Works "}}</a>
                       </li>
                       <li class="essay">
-                        <a href="/research/result">{{t "成果 Results "}}</a>
+                        <a href="/new/result">{{t "成果 Results "}}</a>
                       </li>
                       <li class="dataset">
-                        <a href="/research/dataset">{{t "数据集 Dataset "}}</a>
+                        <a href="/new/research/dataset">{{t "数据集 Dataset "}}</a>
                       </li>
                     </ul>
                   </nav>

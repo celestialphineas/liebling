@@ -14,6 +14,9 @@ It can be used also as the home page or the default page.
 {{#contentFor "styles"}}
   <link rel="stylesheet" type="text/css" href="{{asset "css/home.css"}}" media="screen" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/listing.css"}}" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://www.next.zju.edu.cn/webfonts/GlowSansSC-Compressed-Bold-v0.91/GlowSansSC-Compressed-Bold.css">
+  <link rel="stylesheet" type="text/css" href="http://www.next.zju.edu.cn/webfonts/GlowSansSC-Compressed-ExtraBold-v0.91/GlowSansSC-Compressed-ExtraBold.css">
+  <link rel="stylesheet" type="text/css" href="http://www.next.zju.edu.cn/webfonts/GlowSansSC-Extended-Bold-v0.91/GlowSansSC-Extended-Bold.css">
 {{/contentFor}}
 
 {{!-- The tag below means: insert everything in this file
@@ -22,7 +25,16 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Special header.hbs partial to generate the <header> tag --}}
 {{> header background=@site.cover_image}}
-
+<style>
+  @font-face{
+    font-family: 'Glow Sans SC Compressed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Glow Sans SC Compressed Bold'), local('GlowSansSC-Compressed-Bold'), url(GlowSansSC-Compressed-Bold.116.woff2), url("http://www.next.zju.edu.cn/webfonts/GlowSansSC-Compressed-Bold-v0.91/") format('woff2');
+  unicode-range: U+2b, U+40, U+3000, U+300a-300b, U+4e16, U+4e66, U+4e70, U+4e91-4e92, U+4e94, U+4e9b, U+4ec0, U+4eca, U+4f01, U+4f17-4f18, U+4f46, U+4f4e, U+4f9b, U+4fee, U+503c, U+5065, U+50cf, U+513f, U+5148, U+518d, U+51c6, U+51e0, U+5217, U+529e-529f, U+5341, U+534f, U+5361, U+5386, U+53c2, U+53c8, U+53cc, U+53d7-53d8, U+5404, U+5411, U+5417, U+5427, U+5468, U+559c, U+5668, U+56e0, U+56e2, U+56ed, U+5740, U+57fa, U+58eb, U+5904, U+592a, U+59cb, U+5a31, U+5b58, U+5b9d, U+5bc6, U+5c71, U+5dde, U+5df1, U+5e08, U+5e26, U+5e2e, U+5e93, U+5e97, U+5eb7, U+5f15, U+5f20, U+5f3a, U+5f62, U+5f69, U+5f88, U+5f8b, U+5fc5, U+600e, U+620f, U+6218, U+623f, U+627e, U+628a, U+62a4, U+62db, U+62e9, U+6307, U+6362, U+636e, U+64ad, U+6539, U+653f, U+6548, U+6574, U+6613, U+6625, U+663e, U+666f, U+672a, U+6750, U+6784, U+6a21, U+6b3e, U+6b65, U+6bcf, U+6c11, U+6c5f, U+6d4b, U+6df1, U+706b, U+7167, U+724c, U+738b, U+73a9, U+73af, U+7403, U+7537, U+754c, U+7559, U+767d, U+7740, U+786e, U+795e, U+798f, U+79f0, U+7aef, U+7b7e, U+7bb1, U+7ea2, U+7ea6, U+7ec4, U+7ec6, U+7ecd, U+7edc, U+7ef4, U+8003, U+80b2, U+81f3-81f4, U+822a, U+827a, U+82f1, U+83b7, U+8425, U+89c2, U+89c8, U+8ba9, U+8bb8, U+8bc6, U+8bd5, U+8be2, U+8be5, U+8bed, U+8c03, U+8d23, U+8d2d, U+8d34, U+8d70, U+8db3, U+8fbe, U+8fce, U+8fd1, U+8fde, U+9001, U+901f-9020, U+90a3, U+914d, U+91c7, U+94fe, U+9500, U+952e, U+9605, U+9645, U+9662, U+9664, U+9700, U+9752, U+975e, U+97f3, U+9879, U+9886, U+98df, U+9a6c, U+9a8c, U+9ed1, U+9f99;
+  }
+</style>
 <main class="main-wrap">
   {{!-- Inject styles of the hero image to make it responsive --}}
   {{> hero background=@site.cover_image}}
@@ -62,16 +74,8 @@ into the {body} of the default.hbs template --}}
                           {{/if}}
                         </div>
                       </div>
+                      <div class="dumb-padding"></div>
                       <div class="nextlab-featured-content">
-                                                <div class="m-featured-article__meta">
-                          <a href="{{primary_author.url}}" class="m-featured-article__author js-tooltip" aria-label="{{primary_author.name}}" data-tippy-content="{{t "Posted by"}} {{primary_author.name}} {{authors autolink="false" from="2" prefix=(t "Among with") separator=" , "}}">
-                            {{#if primary_author.profile_image}}
-                              <div style="background-image: url({{img_url primary_author.profile_image size="xs"}});"></div>
-                            {{else}}
-                              <div style="background-image: url({{asset "images/default-avatar-square-small.jpg"}});"></div>
-                            {{/if}}
-                          </a>
-                        </div>
                         <div class="m-featured-article__ribbon">
                           <span class="icon-star"></span>
                           <span>{{t "Featured"}}</span>
@@ -83,12 +87,13 @@ into the {body} of the default.hbs template --}}
                           <h2 class="m-featured-article__title js-featured-article-title" title="{{title}}">
                             {{title}}
                           </h2>
-                          <h4>
-                            {{excerpt}}
-                          </h4>
+                          <div class="info">
+                            <h4 class="excerpt">{{excerpt}}</h4>
                           <div class="m-featured-article__timestamp">
                             <span>{{date published_at}}</span>
                             <span>&bull;</span>
+                            <span>{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
+                          </div>
                           </div>
                         </a>
                       </div>

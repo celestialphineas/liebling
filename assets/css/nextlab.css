@@ -17,3 +17,36 @@
     margin: 0 20px 0;
     margin-bottom: 0px;
 }
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.dumb-padding {
+    width: calc(3.2%);
+    /*! background: red; */
+}
+
+h4 {
+    font-size: 1.2rem !important;
+}
+
+.excerpt {
+    line-height: 1.65rem;
+    font-weight: 450 !important;
+}
+
+.m-nav {
+    font-size: 0.9rem !important;
+}
+
+h5 {
+    font-weight: 450;
+}
+
+.nextlab-content h5 {
+    margin-top: 10px;
+}

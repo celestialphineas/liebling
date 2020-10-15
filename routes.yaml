@@ -34,10 +34,10 @@ routes:
     template: archive
     controller: channel
     filter: tag:article+tag:font-group
-  /archive/chinese/:
+  /archive/designgroup/:
     template: archive
     controller: channel
-    filter: tag:article+tag:chinese
+    filter: tag:article+tag:design-group
   /archive/english/:
     template: archive
     controller: channel

@@ -4,7 +4,7 @@
   {{#is "post"}}
     <div class="m-recommended-slider__item glide__slide">
   {{/is}}
-  <article class="m-article-card {{post_class}}" style="width: calc(20% - 40px) !important; height: 220px;">
+  <article class="m-article-card {{post_class}}" style="width: calc(20% - 40px) !important; height: 309px;">
     <div class="m-article-card__picture " style="height: calc(50%) !important;">
       <a href="{{url}}" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
       {{#if feature_image}}
@@ -23,14 +23,14 @@
       {{/if}}
     </div>
       <div class="m-article-card__info no-tag">
-      <a href="{{url}}" class="m-article-card__info-link" aria-label="{{title}}" style="justify-content: space-around !important;">
+      <a href="{{url}}" class="m-article-card__info-link" aria-label="{{title}}">
         <div>
           <h2 class="m-article-card__title js-article-card-title {{#unless feature_image}}js-article-card-title-no-image{{/unless}}" title="{{title}}">
             {{title}}
           </h2>
         </div>
         <div>
-            {{excerpt}}
+          <small>{{excerpt}}</small>
         </div>
       </a>
     </div>

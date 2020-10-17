@@ -1682,7 +1682,7 @@ _:-ms-fullscreen {
     background-position: 50%;
     background-size: cover;
     z-index: 1;
-    opacity: .7
+    /*opacity: .7*/
 }
 .m-hero__picture.in-post {
     opacity: 1
@@ -1764,7 +1764,6 @@ _:-ms-fullscreen {
     }
 }
 .m-common-hero-title.bigger {
-    letter-spacing: .5px;
     font-size: 2rem
 }
 @media only screen and (min-width:48rem) {
@@ -1774,7 +1773,6 @@ _:-ms-fullscreen {
         margin-bottom: 0;
         font-family: 'Glow Sans SC Compressed' !important;
         font-size: 74px;
-        letter-spacing: 5px;
         font-weight: 800;
     }
 }
@@ -1822,7 +1820,6 @@ _:-ms-fullscreen {
     font-weight: 600;
     font-size: 24pt;
     margin-bottom: 0px;
-    letter-spacing: 4px;
 }
 @media only screen and (min-width:48rem) {
     .m-common-hero-description.bigger {

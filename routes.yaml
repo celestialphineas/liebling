@@ -12,7 +12,7 @@ routes:
     filter: tag:research-essay
     data: tag.research-essay
   /research/dataset/:
-    template: research-list
+    template: research
     controller: channel
     filter: tag:research-dataset
     data: tag.research-dataset

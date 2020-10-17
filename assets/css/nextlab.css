@@ -36,7 +36,8 @@ h4 {
 
 .excerpt {
     line-height: 1.65rem;
-    font-weight: 450 !important;
+    font-weight: 400 !important;
+    margin-top: 14px;
 }
 
 .m-nav {

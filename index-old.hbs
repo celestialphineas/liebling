@@ -108,7 +108,7 @@ into the {body} of the default.hbs template --}}
         {{/get}}
       </div>
       <div class="l-grid centered">
-        {{#get "posts" filter="tag:index+featured: false" as |index_post|}}
+        {{#get "posts" filter="tag:首页+featured: false" as |index_post|}}
         {{#if index_post}}
           {{> "loop-index"}}
         {{/if}}

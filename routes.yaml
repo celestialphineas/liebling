@@ -4,8 +4,8 @@ routes:
   /research/work/:
     template: research
     controller: channel
-    filter: tag:research-work
-    data: tag.research-work
+    filter: tag:作品
+    data: tag.作品
   /research/essay/:
     template: research-list
     controller: channel
@@ -14,8 +14,8 @@ routes:
   /research/dataset/:
     template: research
     controller: channel
-    filter: tag:research-dataset
-    data: tag.research-dataset
+    filter: tag:数据集
+    data: tag.数据集
   /research/result/:
     template: research-list
     controller: channel
@@ -29,40 +29,40 @@ routes:
   /archive/musicgroup/:
     template: archive
     controller: channel
-    filter: tag:article+tag:music-group
+    filter: tag:文章+tag:音乐组
   /archive/fontgroup/:
     template: archive
     controller: channel
-    filter: tag:article+tag:font-group
+    filter: tag:文章+tag:字体组
   /archive/designgroup/:
     template: archive
     controller: channel
-    filter: tag:article+tag:design-group
+    filter: tag:文章+tag:设计组
   /archive/english/:
     template: archive
     controller: channel
-    filter: tag:article+tag:english
+    filter: tag:文章+tag:英文文章
 collections:
   /research/:
     permalink: /research/{slug}/
     template: research
-    filter: tag:research
-    data: tag.research
+    filter: tag:研究
+    data: tag.研究
   /course/:
     permalink: /course/{slug}/
     template: course
-    filter: tag:course
-    data: tag.course
+    filter: tag:课程
+    data: tag.课程
   /archive/:
     permalink: /archive/{slug}/
     template: archive
-    filter: tag:article
-    data: tag.article
+    filter: tag:文章
+    data: tag.文章
   /people/:
     permalink: /people/{slug}/
     template: people
-    filter: tag:people
-    data: tag.people
+    filter: tag:人员
+    data: tag.人员
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/

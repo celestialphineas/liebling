@@ -37,7 +37,7 @@ into the {body} of the default.hbs template --}}
       <div class="teacher-wrapper">
         <h2>教职工 Staff</h2>
         <div class="l-grid centered teachers">
-            {{#get "posts" filter="tag:教职工"}}
+            {{#get "posts" filter="tag:jiao-zhi-gong"}}
                     {{> "loop-people"}}
             {{/get}}
         </div>
@@ -46,7 +46,7 @@ into the {body} of the default.hbs template --}}
       <div class="student-wrapper">
           <h2>学生 Students</h2>
           <div class="l-grid centered students">
-            {{#get "posts" filter="tag:学生"}}
+            {{#get "posts" filter="tag:xue-sheng"}}
                     {{> "loop-people"}} 
             {{/get}}
             </div>
@@ -54,7 +54,7 @@ into the {body} of the default.hbs template --}}
           <div class="graduate-wrapper">
           <h2>毕业生 Alumni</h2>
           <div class="l-grid centered graduate">
-            {{#get "posts" filter="tag:毕业生"}}
+            {{#get "posts" filter="tag:bi-ye-sheng"}}
                     {{> "loop-people"}} 
             {{/get}}
             </div>

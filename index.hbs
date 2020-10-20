@@ -45,7 +45,7 @@ into the {body} of the default.hbs template --}}
   <div class="l-content">
     <div class="l-wrapper" data-aos="fade-up" data-aos-delay="300">
       <div class="l-grid centered">
-        {{#get "posts" filter="featured:true+tag:shou-ye" include="authors,tags" as |featured|}}
+        {{#get "posts" filter="featured:true+tag:hash-shou-ye" include="authors,tags" as |featured|}}
           {{#if featured}}
             <div class="m-featured-slider glide js-featured-slider">
               <div class="glide__track" data-glide-el="track">
@@ -114,7 +114,7 @@ into the {body} of the default.hbs template --}}
         {{/get}}
       </div>
       <div class="l-grid centered">
-        {{#get "posts" filter="tag:shou-ye+featured: false" include="authors,tags" as |index_post|}}
+        {{#get "posts" filter="tag:hash-shou-ye+featured: false" include="authors,tags" as |index_post|}}
         {{#if index_post}}
           {{> "loop-index"}}
         {{/if}}

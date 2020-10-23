@@ -114,7 +114,7 @@ into the {body} of the default.hbs template --}}
         {{/get}}
       </div>
       <div class="l-grid centered">
-        {{#get "posts" filter="tag:hash-shou-ye+featured: false" include="authors,tags" as |index_post|}}
+        {{#get "posts" filter="featured:false+tag:hash-shou-ye" include="authors,tags" as |index_post|}}
         {{#if index_post}}
           {{> "loop-index"}}
         {{/if}}

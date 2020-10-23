@@ -20,7 +20,6 @@ routes:
     template: archive
     controller: channel
     filter: tag:wen-zhang+tag:yin-le-zu
-    data: tag.ying-yue-zu
   /archive/fontgroup/:
     template: archive
     controller: channel

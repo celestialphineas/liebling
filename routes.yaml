@@ -19,7 +19,8 @@ routes:
   /archive/musicgroup/:
     template: archive
     controller: channel
-    filter: tag:wen-zhang+tag:yin-yue-zu
+    filter: tag:wen-zhang+tag:ying-yue-zu
+    data: tag.ying-yue-zu
   /archive/fontgroup/:
     template: archive
     controller: channel

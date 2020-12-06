@@ -6,11 +6,6 @@ routes:
     controller: channel
     filter: tag:zuo-pin
     data: tag.zuo-pin
-  /research/essay/:
-    template: research-list
-    controller: channel
-    filter: tag:research-essay
-    data: tag.research-essay
   /research/dataset/:
     template: research
     controller: channel
@@ -20,18 +15,22 @@ routes:
     template: archive
     controller: channel
     filter: tag:wen-zhang+tag:yin-le-zu
+    data: tag.yin-le-zu
   /archive/fontgroup/:
     template: archive
     controller: channel
     filter: tag:wen-zhang+tag:zi-ti-zu
+    data: tag.zi-ti-zu
   /archive/designgroup/:
     template: archive
     controller: channel
     filter: tag:wen-zhang+tag:she-ji-zu
+    data: tag.she-ji-zu
   /archive/english/:
     template: archive
     controller: channel
     filter: tag:wen-zhang+tag:ying-wen-wen-zhang
+    data: tag.ying-wen-wen-zhang
 collections:
   /research/:
     permalink: /research/{slug}/

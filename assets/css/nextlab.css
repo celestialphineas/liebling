@@ -276,4 +276,14 @@ h5 {
         font-size: 13.5pt !important;
         letter-spacing: 3.5px !important;
     }
+    .m-common-hero-title.bigger {
+        font-size: 3rem !important;
+    }
+    .m-common-hero-title {
+        line-height: 1 !important;
+        margin: 0 !important;
+    }
+    .m-common-hero-description.bigger {
+        font-size: 18pt !important;
+    }
 }

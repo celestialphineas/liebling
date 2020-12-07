@@ -16,6 +16,14 @@
     }
 }
 
+@media only screen and (min-width:80rem) {
+    .l-grid.teachers,
+    .students,
+    .graduates {
+        margin: 0 -10px !important;
+    }
+}
+
 @media only screen and (min-width:48rem) {
     .l-grid.centered {
         justify-content: center

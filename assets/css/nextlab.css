@@ -244,3 +244,7 @@ h5 {
         width: calc(33.3% - 40px) !important;
     }
 }
+
+.research-grid.centered.post-wrapper {
+    flex-direction: row;
+}

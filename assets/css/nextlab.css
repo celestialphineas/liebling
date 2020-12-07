@@ -248,3 +248,9 @@ h5 {
 .research-grid.centered.post-wrapper {
     flex-direction: row;
 }
+
+@media only screen and (max-width: 700px) {
+    .m-heading-title.in-post {
+        margin-top: 40px;
+    }
+}

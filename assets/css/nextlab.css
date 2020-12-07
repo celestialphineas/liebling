@@ -246,11 +246,23 @@ h5 {
 }
 
 .research-grid.centered.post-wrapper {
-    flex-direction: row;
+    flex-direction: row !important;
 }
 
 @media only screen and (max-width: 700px) {
     .m-heading-title.in-post {
-        margin-top: 40px;
+        margin-top: 40px !important;
+    }
+    .m-nav__left li.nav-current {
+        flex-direction: column !important;
+    }
+    .nav-home a {
+        font-size: 1.5rem !important;
+        width: 200px;
+        margin-bottom: 30px !important;
+        flex-direction: row !important;
+    }
+    .nav-home a span {
+        margin-right: 15px !important
     }
 }

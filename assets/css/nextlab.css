@@ -265,4 +265,15 @@ h5 {
     .nav-home a span {
         margin-right: 15px !important
     }
+    .m-hero-title.bigger {
+        font-size: 4rem !important;
+    }
+    .m-hero-title {
+        line-height: 1 !important;
+        margin: 0 0 0 !important;
+    }
+    .m-hero-description.bigger {
+        font-size: 13.5pt !important;
+        letter-spacing: 3.5px !important;
+    }
 }

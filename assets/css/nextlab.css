@@ -286,4 +286,10 @@ h5 {
     .m-common-hero-description.bigger {
         font-size: 18pt !important;
     }
+    .research-nav__left ul {
+        display: flex !important;
+    }
+    .research-nav__left li {
+        margin: 0 10px 0 !important;
+    }
 }

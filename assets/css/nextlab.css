@@ -55,7 +55,7 @@ h5 {
 }
 
 .people-wrapper {
-    width: 1060px !important;
+    max-width: 1060px !important;
     padding: 0 !important;
 }
 
@@ -291,5 +291,55 @@ h5 {
     }
     .research-nav__left li {
         margin: 0 10px 0 !important;
+    }
+    .l-wrapper.people-wrapper.aos-init.aos-animate {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 0px;
+    }
+    .l-grid.teachers .m-article-card {
+        width: calc(50% - 20px) !important;
+        height: calc(50% + 110px);
+        flex-shrink: 0;
+        margin: 0 10px 60px !important;
+    }
+    .l-grid.teachers .m-article-card .m-article-card__picture {
+        width: 100% !important;
+        flex-shrink: 0;
+    }
+    .l-grid.teachers .m-article-card__picture::after {
+        display: block;
+        content: "";
+        padding-bottom: 100%;
+    }
+    .l-grid.students .m-article-card {
+        width: calc(50% - 20px) !important;
+        height: calc(50% + 110px);
+        flex-shrink: 0;
+        margin: 0 10px 60px !important;
+    }
+    .l-grid.students .m-article-card .m-article-card__picture {
+        width: 100% !important;
+        flex-shrink: 0;
+    }
+    .l-grid.students .m-article-card__picture::after {
+        display: block;
+        content: "";
+        padding-bottom: 100%;
+    }
+    .l-grid.graduates .m-article-card {
+        width: calc(50% - 20px) !important;
+        height: calc(50% + 110px);
+        flex-shrink: 0;
+        margin: 0 10px 60px !important;
+    }
+    .l-grid.graduates .m-article-card .m-article-card__picture {
+        width: 100% !important;
+        flex-shrink: 0;
+    }
+    .l-grid.graduates .m-article-card__picture::after {
+        display: block;
+        content: "";
+        padding-bottom: 100%;
     }
 }

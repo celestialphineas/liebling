@@ -343,3 +343,9 @@ h5 {
         padding-bottom: 100%;
     }
 }
+
+@media only screen and (min-width: 700px) {
+    .people-picture {
+        padding-top: 100% !important
+    }
+}

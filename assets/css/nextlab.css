@@ -353,3 +353,42 @@ h5 {
         width: calc(25% - 40px) !important;
     }
 }
+
+@media only screen and (max-width: 64rem) {
+    .m-featured-article__picture {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+    .nextlab-featured-content {
+        top: 0px !important;
+        left: 0px !important;
+        position: absolute;
+        z-index: 4 !important;
+        width: 100% !important;
+    }
+    .m-featured-article__ribbon {
+        top: 20px !important;
+        left: 20px !important;
+    }
+    .m-featured-article__ribbon {
+        color: #fff !important;
+    }
+    .info {
+        color: #fff !important;
+    }
+    .m-featured-article__timestamp {
+        color: #fff !important;
+        bottom: 10px !important;
+    }
+    .m-featured-article__content {
+        position: absolute !important;
+        top: 90px !important;
+        left: 20px !important;
+    }
+    .m-featured-article__tag {
+        top: 50px !important;
+        left: 20px !important;
+        position: absolute !important;
+    }
+}

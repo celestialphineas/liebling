@@ -266,8 +266,10 @@
                                                 .nextlab-featured-picture {
                                                     width: calc(67%);
                                                 }
-                                                .nextlab-featured-content {
-                                                    width: calc(31.44444%);
+                                                @media only screen and (min-width: 64rem) {
+                                                    .nextlab-featured-content {
+                                                        width: calc(31.44444%);
+                                                    }
                                                 }
                                                 .m-featured-article {
                                                     position: relative;

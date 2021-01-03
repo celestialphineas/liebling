@@ -345,7 +345,7 @@ h5 {
 }
 
 .people-picture {
-    padding-top: 100% !important;
+    /*padding-top: 100% !important;*/
 }
 
 @media only screen and (min-width: 64rem) {
@@ -390,5 +390,24 @@ h5 {
         top: 50px !important;
         left: 20px !important;
         position: absolute !important;
+    }
+    .l-grid.teachers {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .l-grid.students {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .l-grid.graduates {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .people-card {
+        width: calc(50% - 20px);
+    }
+    .people-title {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

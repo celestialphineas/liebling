@@ -355,6 +355,9 @@ h5 {
 }
 
 @media only screen and (max-width: 64rem) {
+    .m-featured-article__title {
+        color: #eee;
+    }
     .m-featured-article__picture {
         position: absolute !important;
         top: 0 !important;

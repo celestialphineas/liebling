@@ -415,3 +415,7 @@ h5 {
         margin-right: 10px;
     }
 }
+
+.m-recommended {
+    display: none;
+}
